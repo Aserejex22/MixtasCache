@@ -7,19 +7,19 @@ const APP_SHELL_CACHE = `app-shell-v${CACHE_VERSION.APP_SHELL}`;
 const DYNAMIC_CACHE = `dynamic-cache-v${CACHE_VERSION.DYNAMIC}`;
 
 const APP_SHELL_ASSETS = [
-  '/',                 
-  '/index.html',
-  '/pages/calendar.html',
-  '/pages/form.html',
-  '/pages/about.html',
-  '/style.css',
-  '/register.js',
-  '/img/192.png',
-  '/img/512.png',
-  'https://cdn.tailwindcss.com/'
+  './',
+  './index.html',
+  'pages/calendar.html',
+  'pages/form.html',
+  'pages/about.html',
+  './style.css',
+  './register.js',
+  'img/192.png',
+  'img/512.png'
 ];
 
 const DYNAMIC_ASSET_URLS = [
+  'https://cdn.tailwindcss.com/',
   'https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js',
   'https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/main.min.css',
 
