@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Formulario — Select2</title>
+
+  <!-- Tailwind y Select2 CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
+
+  <link rel="stylesheet" href="/style.css" />
+  <style>
+    /* ajustar el ancho del select2 para mobile */
+    .select2-container { width: 100% !important; }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-900">
+  <header class="bg-white/80 sticky top-0 border-b">
+    <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <div class="w-9 h-9 bg-indigo-600 rounded flex items-center justify-center text-white font-bold">PW</div>
+        <div>
+          <h1 class="text-lg font-semibold">Formulario</h1>
+          <p class="text-xs text-slate-500">Select2 integrado</p>
+        </div>
+      </a>
+      <nav class="hidden sm:flex gap-3">
+        <a href="/index.html" class="px-3 py-2 rounded hover:bg-slate-100">Inicio</a>
+        <a href="./calendar.html" class="px-3 py-2 rounded hover:bg-slate-100">Calendario</a>
+        <a href="./about.html" class="px-3 py-2 rounded hover:bg-slate-100">Acerca</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 py-8">
+    <div class="bg-white rounded-2xl shadow p-6">
+      <h2 class="text-2xl font-bold mb-2">Formulario de ejemplo</h2>
+      <p class="text-sm text-slate-600 mb-4">Select2 mejora la experiencia del selector.</p>
+
+      <form id="demoForm" class="space-y-4">
+        <div>
+          <label for="countries" class="block text-sm font-medium text-slate-700 mb-2">Selecciona un país</label>
+          <select id="countries" style="width:100%">
+            <option value="MX">México</option>
+            <option value="US">Estados Unidos</option>
+            <option value="ES">España</option>
+            <option value="FR">Francia</option>
+            <option value="JP">Japón</option>
+            <option value="BR">Brasil</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="notes" class="block text-sm font-medium text-slate-700 mb-2">Notas</label>
+          <textarea id="notes" rows="4" class="w-full rounded-md border px-3 py-2 text-sm" placeholder="Alguna nota..."></textarea>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <button type="submit" class="px-4 py-2 bg-indigo-600 text-white rounded-lg">Enviar</button>
+          <a href="/" class="text-sm text-slate-500 hover:underline">Volver</a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- jQuery y Select2 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('#countries').select2({ placeholder: 'Selecciona un país', allowClear: true });
+      $('#demoForm').on('submit', function (e) {
+        e.preventDefault();
+        const val = $('#countries').val();
+        alert('Seleccion: ' + val);
+      });
+    });
+  </script>
+
+  <script src="/register.js"></script>
+</body>
+</html>
