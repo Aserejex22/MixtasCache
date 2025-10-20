@@ -2,7 +2,7 @@
   "name": "Onlycache-Adrian",
   "short_name": "Onlycache",
   "description": "Aplicación PWA de ejemplo que utiliza un service worker para cachear páginas.",
-  "start_url": ".MixtasCache/index.html",
+  "start_url": "/MixtasCache/index.html",
   "scope": "/MixtasCache/",
   "display": "standalone",
   "orientation": "portrait",
