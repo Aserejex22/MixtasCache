@@ -2,21 +2,21 @@
   "name": "Onlycache-Adrian",
   "short_name": "Onlycache",
   "description": "Aplicación PWA de ejemplo que utiliza un service worker para cachear páginas.",
-  "start_url": "/MixtasCache/index.html",
-  "scope": "/MixtasCache/",
+  "start_url": "https://aserejex22.github.io/MixtasCache/",
+  "scope": "https://aserejex22.github.io/MixtasCache/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",
   "theme_color": "#2b6cb0",
   "icons": [
     {
-      "src": "/MixtasCache/img/192.png",
+      "src": "https://aserejex22.github.io/MixtasCache/img/192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/MixtasCache/img/512.png",
+      "src": "https://aserejex22.github.io/MixtasCache/img/512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
